@@ -19,10 +19,41 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
         $a->display();
         ?>
     </div>
-	<div class="row">
-		<div class="col-md-12 footer-content">
+	<!--Acknowledgement of Country start -->
+
+    <div class="row footer-wrapper">
+        <div class="footerack">
+            <div class="footerack-wrapper">
+                <div class="footerack-content">
+                    <img src='/application/themes/hospitals_responsive/images/ab-flag-1.jpg' width=80px><span class="ack">Healthscope acknowledges the Traditional Custodians of the land and pay our respects to Elders past, present and emerging.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		<!--Acknowledgement of Country ends -->
+	<div class="row new-footer">
+		<div class="col-xs-12 col-sm-6 col-md-3 footer-content">
 			<?php
 			$a = new GlobalArea('Contact Details');
+			$a->display();
+			?>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 footer-content">
+			<?php
+			$a = new GlobalArea('Quick Links');
+			$a->display();
+			?>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 footer-content">
+			<?php
+			$a = new GlobalArea('House Alerts');
+			$a->display();
+			?>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 footer-content">
+			<?php
+			$a = new GlobalArea('Contact Us');
 			$a->display();
 			?>
 			</div>
@@ -33,7 +64,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
 			$a = new GlobalArea('Social Links');
 			$a->display();
 			?>
-			<p> &copy; <?php echo date("Y"); ?> Healthscope | All rights reserved </p>
+			<p style="font-size:13px";> &copy; <?php echo date("Y"); ?> Healthscope | All rights reserved  | <a href="https://healthscope.com.au/privacy-summary">Privacy Policy</a></p>
 		</div>
 	</div>
 </footer>
